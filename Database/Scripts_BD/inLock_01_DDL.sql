@@ -1,7 +1,7 @@
-CREATE  DATABASE inlock_games;
+CREATE  DATABASE inlock;
 GO
 
-USE inlock_games;
+USE inlock;
 GO
 
 CREATE TABLE Estudio
