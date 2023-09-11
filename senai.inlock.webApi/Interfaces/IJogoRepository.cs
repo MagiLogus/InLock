@@ -2,24 +2,24 @@
 
 namespace senai.inlock.webApi.Interfaces
 {
-    /// <summary>
-    /// Interface responsável pelo repositório JogoRepository
-    /// Definir os métodos que serão implementados pelo JogoRepository
-    /// </summary>
     public interface IJogoRepository
     {
-        //TipoRetorno NomeMetodo(TipoParâmetro NomeParâmetro)
-
         /// <summary>
-        /// Cadastrar um novo Jogo
+        /// Interface responsável pelo repositório JogoRepository
+        /// Definir os métodos que serão implementados pelo JogoRepository
         /// </summary>
-        /// <param name="novoJogo">Objeto que será cadastrado</param>
         void Cadastrar(JogoDomain novoJogo);
 
         /// <summary>
-        /// Listar todos os objetos cadastrados
+        /// Listar todos os objetos Jogos cadastrados
         /// </summary>
         /// <returns>Lista com os objetos</returns>
         List<JogoDomain> ListarTodos();
+
+        /// <summary>
+        /// Deletar um objeto Estudio
+        /// </summary>
+        /// <param name="id">Id do objeto que será deletado</param>
+        void Deletar(int id);
     }
 }
