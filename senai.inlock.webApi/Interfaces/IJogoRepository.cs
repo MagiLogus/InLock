@@ -2,12 +2,16 @@
 
 namespace senai.inlock.webApi.Interfaces
 {
+    /// <summary>
+    /// Interface responsável pelo repositório JogoRepository
+    /// Definir os métodos que serão implementados pelo JogoRepository
+    /// </summary>
     public interface IJogoRepository
     {
         /// <summary>
-        /// Interface responsável pelo repositório JogoRepository
-        /// Definir os métodos que serão implementados pelo JogoRepository
+        /// Cadastrar um novo jogo
         /// </summary>
+        /// <param name="novoJogo">este parametro e o objeto que sera cadastrado</param>
         void Cadastrar(JogoDomain novoJogo);
 
         /// <summary>

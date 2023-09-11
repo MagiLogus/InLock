@@ -44,11 +44,17 @@
             Classe que representa a entidade (tabela) Usuario
             </summary>
         </member>
+        <member name="T:senai.inlock.webApi.Interfaces.IEstudioRepository">
+            <summary>
+            Interface responsavel pelo repositorio estudiosrepository
+            define os metodos que serao implementados pelo repositorio
+            </summary>
+        </member>
         <member name="M:senai.inlock.webApi.Interfaces.IEstudioRepository.Cadastrar(senai.inlock.webApi.Domains.EstudioDomain)">
             <summary>
-            Interface responsável pelo repositório EstudioRepository
-            Definir os métodos que serão implementados pelo EstudioRepository
+            Cadastrar um novo Estudio
             </summary>
+            <param name="novoEstudio">este parametro e o objeto que sera cadastrado</param>
         </member>
         <member name="M:senai.inlock.webApi.Interfaces.IEstudioRepository.ListarTodos">
             <summary>
@@ -62,11 +68,17 @@
             </summary>
             <param name="id">Id do objeto que será deletado</param>
         </member>
-        <member name="M:senai.inlock.webApi.Interfaces.IJogoRepository.Cadastrar(senai.inlock.webApi.Domains.JogoDomain)">
+        <member name="T:senai.inlock.webApi.Interfaces.IJogoRepository">
             <summary>
             Interface responsável pelo repositório JogoRepository
             Definir os métodos que serão implementados pelo JogoRepository
             </summary>
+        </member>
+        <member name="M:senai.inlock.webApi.Interfaces.IJogoRepository.Cadastrar(senai.inlock.webApi.Domains.JogoDomain)">
+            <summary>
+            Cadastrar um novo jogo
+            </summary>
+            <param name="novoJogo">este parametro e o objeto que sera cadastrado</param>
         </member>
         <member name="M:senai.inlock.webApi.Interfaces.IJogoRepository.ListarTodos">
             <summary>

@@ -2,12 +2,16 @@
 
 namespace senai.inlock.webApi.Interfaces
 {
+    /// <summary>
+    /// Interface responsavel pelo repositorio estudiosrepository
+    /// define os metodos que serao implementados pelo repositorio
+    /// </summary>
     public interface IEstudioRepository
     {
         /// <summary>
-        /// Interface responsável pelo repositório EstudioRepository
-        /// Definir os métodos que serão implementados pelo EstudioRepository
+        /// Cadastrar um novo Estudio
         /// </summary>
+        /// <param name="novoEstudio">este parametro e o objeto que sera cadastrado</param>
         void Cadastrar(EstudioDomain novoEstudio);
         
         /// <summary>
