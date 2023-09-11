@@ -56,8 +56,8 @@ builder.Services.AddSwaggerGen(options =>
         Description = "API para o gerenciamentos de Estudio e Jogos - Jogos WEB.API",
         Contact = new OpenApiContact
         {
-            Name = "Lucas Oliveira - Senai Informática",
-            Url = new Uri("https://github.com/Lucca-gOn")
+            Name = "Paulo Oliveira - Senai Informática",
+            Url = new Uri("https://github.com/MagiLogus")
         },
     });
 

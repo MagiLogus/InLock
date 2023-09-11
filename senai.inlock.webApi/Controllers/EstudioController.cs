@@ -33,7 +33,7 @@ namespace senai.inlock.webApi.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "admin,cliente")]
+        [Authorize(Roles = "2,1")]
         public IActionResult Get ()
         {
             try
@@ -50,7 +50,7 @@ namespace senai.inlock.webApi.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "2")]
         public IActionResult Add (EstudioDomain novoEstudio)
         {
             try
@@ -67,7 +67,7 @@ namespace senai.inlock.webApi.Controllers
         }
 
         [HttpDelete]
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "2")]
         public IActionResult Delete (int id) 
         {
             try
